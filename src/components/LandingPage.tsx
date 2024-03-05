@@ -1,6 +1,7 @@
 import React from "react";
 import { details, quotes } from "../../constants/utils";
 import { FaArrowUpLong } from "react-icons/fa6";
+import { MotionDiv } from "./MotionDiv";
 
 const LandingPage = () => {
   return (
@@ -9,7 +10,7 @@ const LandingPage = () => {
         {quotes.map((i, index) => (
           <div key={index} className="Quotes">
             <div className="w-fit flex items-center overflow-hidden">
-                {index === 1 && (<div className="rounded-md mr-3 w-[10vw] h-[6vw] top-[.3vw] relative bg-red-500"></div>)}
+                {index === 1 && (<MotionDiv initial={{width : 0}} animate ={{width : "9vw"}} transition={{ease : [0.76,0,0.84,1]}} className="rounded-md mr-3 ml-3 w-[10vw] h-[6vw] top-[.3vw] relative bg-red-500"></MotionDiv>)}
               <h1 className="uppercase text-[9vw] leading-[.79] tracking-tighter font-medium ">
                 {i}
               </h1>
