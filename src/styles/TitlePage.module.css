@@ -3,9 +3,11 @@
     
 }
 .title{
-    background-color: #ff744dcf;
+    background-color: rgba(255, 255, 255, 0.779);
     backdrop-filter: blur(10px);
 }
 .titleText{
-    color : white;
+    background: linear-gradient(to right,#FF744D,#FFBB4D);
+    color : transparent;
+    -webkit-background-clip: text;
 }

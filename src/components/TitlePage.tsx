@@ -14,9 +14,6 @@ const TitlePage = () => {
         <Motionh1 initial={{x : "0"}} animate={{x: "-100%"}} transition={{repeat : Infinity, ease :"linear",duration: 10}} className={`${styles.titleText} text-[10vw] py-10 text-nowrap leading-none font-bold pr-10`}>
           Pss Financials
         </Motionh1>
-        
-        
-       
       </div>
       </div>
   );
