@@ -2,12 +2,13 @@ import LandingPage from "@/components/LandingPage";
 import TitlePage from "@/components/TitlePage";
 import Users from "@/components/Users";
 
-export default function Home() {
+const Home: React.FC = () =>{
   return (
-    <div>
+    <div id="scroll-container">
     <LandingPage />
     <TitlePage />
     <Users />
     </div>
   );
 }
+export default Home

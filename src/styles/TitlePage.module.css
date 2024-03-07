@@ -1,0 +1,11 @@
+.titleBack{
+    background-color: #ffbb4d;
+    
+}
+.title{
+    background-color: #ff744dcf;
+    backdrop-filter: blur(10px);
+}
+.titleText{
+    color : white;
+}
