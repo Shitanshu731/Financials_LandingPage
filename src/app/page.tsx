@@ -13,6 +13,5 @@ const Home: React.FC = () =>{
     <Users />
     </div>
   );
-  
 }
 export default Home
