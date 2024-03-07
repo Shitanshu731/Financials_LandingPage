@@ -5,6 +5,8 @@ import { IoPeopleSharp } from "react-icons/io5";
 import { FaStar } from "react-icons/fa";
 import { GoCodeReview } from "react-icons/go";
 import styles from "../styles/Users.module.css"
+import { User } from '../../constants/utils';
+import { TiTick } from "react-icons/ti";
 
 const Users = () => {
   return (
@@ -33,15 +35,21 @@ const Users = () => {
       </div>
       <div className={`${styles.rightContainer}  justify-center`}>
            <h2 className='text-[40px] font-bold'>Wondering how a Financial Expert can help you?</h2>
-           <div className='flex flex-wrap gap-12 max-w-[100%] '>
-            <p>Customized investment solutions</p>
-            <p>New investment ideas</p>
-            <p>Research-backed fund selection</p>
-            <p>Tax planning</p>
-            <p>Real-time portfolio monitoring</p>
-            <p>Returns that beat benchmark</p>
-            <p>Periodic portfolio reviews</p>
-            <p>Wealth protection planning</p>
+           <div className='flex  gap-12 max-w-[100%] '>
+            <div>
+              {User.leftTag.map((i) => (
+                <div key={i} className='flex items-center gap-4 font-semibold mt-7'>
+                  <TiTick />
+                <p >{i.toLowerCase()}</p></div>
+              ))}
+            </div>
+            <div>
+              {User.rightTag.map((i) => (
+                <div key={i} className='flex items-center gap-4 font-semibold mt-7'>
+                <TiTick />
+              <p >{i.toLowerCase()}</p></div>
+              ))}
+            </div>
            </div>
       </div>
     </div>
