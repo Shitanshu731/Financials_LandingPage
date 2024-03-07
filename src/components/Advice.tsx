@@ -4,6 +4,7 @@ import { MotionDiv } from './MotionDiv'
 import { FaArrowTrendUp } from "react-icons/fa6";
 import { FaLock } from "react-icons/fa6";
 import { AiOutlinePercentage } from "react-icons/ai";
+
 const Advice = () => {
   return (
     <div className={`${styles.adviceMain} w-full py-20`}>
