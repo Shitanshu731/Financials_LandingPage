@@ -8,7 +8,7 @@ import { GoCodeReview } from "react-icons/go";
 const Users = () => {
   return (
     <div className='w-full py-20 rounded-tl-3xl rounded-tr-3xl bg-[#FDF7FA] flex justify-between px-20 max-md:flex-col'>
-      <div className='leftContainer flex flex-wrap gap-5 md:max-w-[50%] items-center justify-center'>
+      <div className='leftContainer flex flex-wrap gap-5 md:max-w-[100%] items-center justify-center'>
             <MotionDiv initial={{y:'100px',opacity: 0}} animate={{y:40,opacity:1}} className='card w-64 h-52 max-sm:w-36 bg-gradient-to-r from-[#FDF7FA] to-[#FFBB4D] shadow-lg rounded-lg relative'>
                 <div className='icon rounded-full w-16 h-16 bg-gradient-to-r from-[#FDF7FA] to-[#FFBB4D] absolute top-5 ml-5 text-center'><FaArrowTrendUp className='items-center absolute top-5 ml-5 text-2xl justify-center' /></div>
                 <h2 className='text-[30px] absolute top-24 ml-5 font-bold'>2000 +</h2>
@@ -31,7 +31,17 @@ const Users = () => {
             </MotionDiv>
       </div>
       <div className='rightContainer  max-w-[50%] justify-center'>
-          
+           <h2 className='text-[40px] font-bold'>Wondering how a Financial Expert can help you?</h2>
+           <div className='flex flex-wrap gap-12 max-w-[80%] '>
+            <p>Customized investment solutions</p>
+            <p>New investment ideas</p>
+            <p>Research-backed fund selection</p>
+            <p>Tax planning</p>
+            <p>Real-time portfolio monitoring</p>
+            <p>Returns that beat benchmark</p>
+            <p>Periodic portfolio reviews</p>
+            <p>Wealth protection planning</p>
+           </div>
       </div>
     </div>
   )

@@ -28,12 +28,12 @@ const LandingPage = () => {
           </p>
         ))}
         <div className="start flex items-center gap-5">
-          <div className="px-5 py-2 border-[2px] rounded-full border-red-900 font-light text-sm">
-            Start the Project
+          <div className="px-5 py-2 border-[2px] rounded-full border-red-900  text-sm font-bold">
+            Book a Call
           </div>
-          <div className="w-10 h-10 rounded-full border-[2px] flex items-center justify-center border-black">
+          <div className="w-5 h-5 rounded-full border-[2px] flex  items-center justify-center border-black hover:bg-[#FFBB4D] hover:border-none cursor-pointer shadow-lg hover:scale-150 duration-150 hover:p-4">
             <span className="rotate-[45deg]">
-              <FaArrowUpLong />
+              <FaArrowUpLong className="text-sm" />
             </span>
           </div>
         </div>
