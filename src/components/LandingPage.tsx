@@ -31,7 +31,7 @@ const LandingPage = () => {
           <div className="px-5 py-2 border-[2px] rounded-full border-red-900 font-light text-sm">
             Start the Project
           </div>
-          <div className="w-10 h-10 rounded-full border-[2px] flex items-center justify-center border-red-900">
+          <div className="w-10 h-10 rounded-full border-[2px] flex items-center justify-center border-black">
             <span className="rotate-[45deg]">
               <FaArrowUpLong />
             </span>
