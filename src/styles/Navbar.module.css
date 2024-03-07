@@ -1,6 +1,6 @@
 .navbar{
     backdrop-filter: blur(10px);
-    background-color: #fdf7fac8;
+    background-color: #fdf7faaf;
 }
 .links a{
     position : relative;
@@ -33,8 +33,11 @@
 .links a:nth-child(2):hover{
     color : #FF744D;
 }
-.rightArrow:hover {
-    transform: rotate(-45deg);
+.downArrow{
+    transform: rotate(-90deg);
+}
+.downArrow:hover {
+    transform: rotate(-115deg);
     transition: .3s;
     background-color: aliceblue;
     border-radius: 50%;
