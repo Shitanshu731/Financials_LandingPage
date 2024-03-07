@@ -5,6 +5,11 @@
 .links a{
     position : relative;
 }
+.links a:hover{
+    position : relative;
+    color : #FF744D;
+    transition: 0.4s;
+}
 .links a::after{
     content :"";
     position: absolute;

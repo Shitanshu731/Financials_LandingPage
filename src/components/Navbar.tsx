@@ -11,7 +11,7 @@ const Navbar = () => {
         </div>
         <div className={`${styles.links} flex gap-10`}>
             {Link.map((i,index) =>(
-                <a key={index} className='text-xl font-bold cursor-pointer'>{i}</a>
+                <a key={index} className='text-xl font-semibold  cursor-pointer'>{i}</a>
             ) )}
         </div>
       
