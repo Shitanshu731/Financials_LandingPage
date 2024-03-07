@@ -4,11 +4,12 @@ import { FaArrowTrendUp } from "react-icons/fa6";
 import { IoPeopleSharp } from "react-icons/io5";
 import { FaStar } from "react-icons/fa";
 import { GoCodeReview } from "react-icons/go";
+import styles from "../styles/Users.module.css"
 
 const Users = () => {
   return (
-    <div className='w-full py-20 rounded-tl-3xl rounded-tr-3xl bg-[#FDF7FA] flex justify-between px-20 max-md:flex-col gap-20'>
-      <div className='leftContainer flex flex-wrap gap-5 md:max-w-[100%] items-center justify-center'>
+    <div className={`${styles.userMain} w-full py-20 rounded-tl-3xl rounded-tr-3xl bg-[#FDF7FA] flex justify-between px-20 max-md:flex-col gap-20`}>
+      <div className={`${styles.leftContainer} flex flex-wrap gap-5 items-center justify-center`}>
             <MotionDiv initial={{y:'100px',opacity: 0}} animate={{y:40,opacity:1}} className='card w-64 h-52 max-sm:w-36 bg-gradient-to-r from-[#FDF7FA] to-[#FFBB4D] shadow-lg rounded-lg relative'>
                 <div className='icon rounded-full w-16 h-16 bg-gradient-to-r from-[#FDF7FA] to-[#FFBB4D] absolute top-5 ml-5 text-center'><FaArrowTrendUp className='items-center absolute top-5 ml-5 text-2xl justify-center' /></div>
                 <h2 className='text-[30px] absolute top-24 ml-5 font-bold'>2000 +</h2>
@@ -30,7 +31,7 @@ const Users = () => {
                 <h5 className='text-[20px] absolute top-36 ml-5 font-bold'>Customer Satisfaction</h5>
             </MotionDiv>
       </div>
-      <div className='rightContainer  max-w-[50%] max-md:max-w-[100%] justify-center'>
+      <div className={`${styles.rightContainer}  justify-center`}>
            <h2 className='text-[40px] font-bold'>Wondering how a Financial Expert can help you?</h2>
            <div className='flex flex-wrap gap-12 max-w-[100%] '>
             <p>Customized investment solutions</p>

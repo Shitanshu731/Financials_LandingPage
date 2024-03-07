@@ -1,0 +1,15 @@
+.leftContainer{
+    flex-basis: 50%;
+}
+.rightContainer{
+    flex-basis: 50%;
+}
+@media screen and (max-width: 1310px) {
+    .userMain{
+        display: flex;
+        flex-direction: column;
+    }
+    .rightContainer{
+        flex-basis: 100%;
+    }
+}
