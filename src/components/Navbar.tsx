@@ -23,4 +23,5 @@ const Navbar = () => {
 }
 
 export default Navbar
+
 //{index === 2 && <MdOutlineArrowRightAlt className={`${styles.rightArrow} text-3xl`} />}
