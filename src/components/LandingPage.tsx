@@ -5,20 +5,20 @@ import { MotionDiv } from "./MotionDiv";
 
 const LandingPage = () => {
   return (
-    <div className="w-full h-screen bg-zinc-300 pt-1 font-bold">
+    <div className="w-full h-screen bg-[#FDF7FA] pt-1 font-bold">
       <div className="textstructure mt-52 flex flex-col px-20">
         {quotes.map((i, index) => (
           <div key={index} className="Quotes">
             <div className="w-fit flex items-center overflow-hidden">
-                {index === 1 && (<MotionDiv initial={{width : 0}} animate ={{width : "9vw"}} transition={{ease : [0.76,0,0.84,1]}} className="rounded-md mr-3 ml-3 w-[10vw] h-[6vw] top-[.3vw] relative bg-red-500"></MotionDiv>)}
-              <h1 className="uppercase text-[9vw] leading-[.79] tracking-tighter font-medium ">
+                {index === 1 && (<MotionDiv initial={{width : 0}} animate ={{width : "9vw"}} transition={{ease : [0.66,0,0.24,1]}} className="rounded-md mr-3 ml-3 w-[10vw] h-[6vw] top-[.3vw] relative bg-[#FFBB4D]"></MotionDiv>)}
+              <h1 className="uppercase text-[#25291C] text-[9vw] leading-[.79] tracking-tighter font-medium ">
                 {i}
               </h1>
             </div>
           </div>
         ))}
       </div>
-      <div className="border-t-2 border-red-900 mt-32 flex justify-between items-center py-5 px-20">
+      <div className="border-t-2 border-[#FFBB4D] mt-32 flex justify-between items-center py-5 px-20">
         {details.map((i, index) => (
           <p
             key={index}
