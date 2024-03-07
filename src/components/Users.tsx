@@ -8,7 +8,7 @@ import styles from "../styles/Users.module.css"
 
 const Users = () => {
   return (
-    <div className={`${styles.userMain} w-full py-20 rounded-tl-3xl rounded-tr-3xl bg-[#FDF7FA] flex justify-between px-20 max-md:flex-col gap-20`}>
+    <div className={`${styles.userMain} w-full py-20  bg-[#FDF7FA] flex justify-between px-20 max-md:flex-col gap-20`}>
       <div className={`${styles.leftContainer} flex flex-wrap gap-5 items-center justify-center`}>
             <MotionDiv initial={{y:'100px',opacity: 0}} animate={{y:40,opacity:1}} className='card w-64 h-52 max-sm:w-36 bg-gradient-to-r from-[#FDF7FA] to-[#FFBB4D] shadow-lg rounded-lg relative'>
                 <div className='icon rounded-full w-16 h-16 bg-gradient-to-r from-[#FDF7FA] to-[#FFBB4D] absolute top-5 ml-5 text-center'><FaArrowTrendUp className='items-center absolute top-5 ml-5 text-2xl justify-center' /></div>

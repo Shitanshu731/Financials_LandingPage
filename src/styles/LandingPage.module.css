@@ -1,0 +1,7 @@
+.landingMain{
+    background-color: rgba(255, 255, 255, 0.744);
+    backdrop-filter: blur(10px);
+}
+.main{
+    background-image: url("../../public/pssBackground.jpg");
+}

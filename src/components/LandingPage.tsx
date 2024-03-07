@@ -3,15 +3,16 @@ import { details, quotes } from "../../constants/utils";
 import { FaArrowUpLong } from "react-icons/fa6";
 import { MotionDiv } from "./MotionDiv";
 import Image from "next/image";
+import styles from "../styles/LandingPage.module.css"
 
 const LandingPage = () => {
   return (
-    <div className="w-full h-screen bg-[#FDF7FA] pt-1 font-bold">
+    <div className={`${styles.landingMain} w-full h-screen pt-1 font-bold`}>
       <div className="textstructure mt-52 flex flex-col px-20">
         {quotes.map((i, index) => (
           <div key={index} className="Quotes">
             <div className="w-fit flex items-center overflow-hidden">
-                {index === 1 && (<MotionDiv initial={{width : 0,opacity : 0}} animate ={{width : "17vw",opacity : 1}} transition={{ease : [0.56,0,0.24,1]}} className="mr-3 ml-3 w-[10vw] h-[8vw] top-[.3vw] relative "><Image src ={"/Investement.jpg"}  width={600} height={300} /></MotionDiv>)}
+                {index === 1 && (<MotionDiv initial={{width : 0,opacity : 0}} animate ={{width : "14vw",opacity : 1}} transition={{ease : [0.56,0,0.24,1]}} className="mr-3 ml-3 w-[10vw] h-[6vw] top-[.3vw] relative "><Image src ={"/Investement.jpg"}  width={600} height={300} /></MotionDiv>)}
               <h1 className="uppercase text-[#25291C] text-[9vw] leading-[.79] tracking-tighter font-medium ">
                 {i}
               </h1>
