@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from '../../constants/utils'
 import styles from "../styles/Navbar.module.css"
 import Image from 'next/image'
-import { MdOutlineArrowRightAlt } from "react-icons/md";
 
 const Navbar = () => {
   return (
@@ -13,7 +12,7 @@ const Navbar = () => {
         <div className={`${styles.links} flex gap-10`}>
         {Link.map((i, index) => (
     <a key={index} className={`${index === 2 ? 'ml-28 bg-[#FFBE55] rounded-full p-2 flex items-center gap-3' : ''} text-xl font-semibold cursor-pointer`}>
-        {i} {index === 2 && <MdOutlineArrowRightAlt className={`${styles.rightArrow} text-3xl`} />}
+        {i} 
     </a>
 ))}
 
@@ -24,3 +23,4 @@ const Navbar = () => {
 }
 
 export default Navbar
+//{index === 2 && <MdOutlineArrowRightAlt className={`${styles.rightArrow} text-3xl`} />}

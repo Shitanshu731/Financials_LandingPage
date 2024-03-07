@@ -1,6 +1,6 @@
 import React from "react";
 import { details, quotes } from "../../constants/utils";
-import { FaArrowUpLong } from "react-icons/fa6";
+// import { FaArrowUpLong } from "react-icons/fa6";
 import { MotionDiv } from "./MotionDiv";
 import Image from "next/image";
 import styles from "../styles/LandingPage.module.css"
@@ -35,7 +35,7 @@ const LandingPage = () => {
           </div>
           <div className="w-5 h-5 rounded-full border-[2px] flex  items-center justify-center border-black hover:bg-[#FFBB4D] hover:border-none cursor-pointer shadow-lg hover:scale-150 duration-150 hover:p-4">
             <span className="rotate-[45deg]">
-              <FaArrowUpLong className="text-sm" />
+              {/* <FaArrowUpLong className="text-sm" /> */}
             </span>
           </div>
         </div>
