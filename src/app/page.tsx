@@ -9,8 +9,8 @@ const Home: React.FC = () =>{
     <div className ={`${styles.main}`}>
     <LandingPage />
     <TitlePage />
-    <Users />
     <Advice />
+    <Users />
     </div>
   );
 }

@@ -7,10 +7,10 @@
 }
 .links a:hover{
     position : relative;
-    color : #FF744D;
     transition: 0.4s;
 }
-.links a::after{
+.links a:nth-child(1)::after,
+.links a:nth-child(2)::after {
     content :"";
     position: absolute;
     bottom : -5px;
@@ -22,6 +22,16 @@
     transform :scaleX(0);
     transition: .5s;
 }
-.links a:hover::after{
+.links a:nth-child(1):hover::after,
+.links a:nth-child(2):hover::after {
     transform: scaleX(1);
+}
+.links a:nth-child(3):hover{
+    transform: scale(1.1);
+}
+.rightArrow:hover {
+    transform: rotate(-45deg);
+    transition: .3s;
+    background-color: aliceblue;
+    border-radius: 50%;
 }
