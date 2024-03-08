@@ -38,13 +38,13 @@ const MobileBar:React.FC = () => {
                 </a>
             </li>
             <li className={`${styles.list}`}>
-                <a href= "#">
+                <a href= "#advice">
                   <span className={`${styles.icon}`}><Image src ={"/lock.png"} alt="Ensure your Plan" width={20} height={20} /></span>
-                  <span className={`${styles.text}`}>Home</span>
+                  <span className={`${styles.text}`}>Advice</span>
                 </a>
             </li>
             <li className={`${styles.list}`}>
-                <a href= "#advice">
+                <a href= "#">
                   <span className={`${styles.icon} hidden`}><Image src ={"/sip.png"} alt="Talk to expert" width={20} height={20} /></span>
                   <span className={`${styles.text}`}>SIP</span>
                 </a>
