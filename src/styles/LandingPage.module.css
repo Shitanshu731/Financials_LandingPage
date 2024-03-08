@@ -1,6 +1,10 @@
 .landingMain{
     background-color: rgba(255, 255, 255, 0.546);
     backdrop-filter: blur(10px);
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    
 }
 .main{
     background-image: url("../../public/pssBackground.jpg");
