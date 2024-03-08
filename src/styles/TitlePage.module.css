@@ -18,3 +18,14 @@
     font-weight: 600;
     font-style: italic;
 }
+@media screen and (max-width: 769px) {
+    .title{
+        background-color: rgba(255, 255, 255, 0.286);
+        backdrop-filter: blur(10px);
+    }
+    .titleBack{
+        background: transparent;
+        backdrop-filter: blur(0px);
+        
+    }
+}
