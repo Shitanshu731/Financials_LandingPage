@@ -58,8 +58,16 @@
         display : none;
     }
 }
-@media screen and (max-width: 767px){
+@media screen and (max-width: 402px) {
     .navbar{
         background : transparent;
+        backdrop-filter: blur(0px);
+    }
+}
+@media screen and (min-width: 402px)  and (max-width: 767px){
+    .navbar{
+        background : transparent;
+        backdrop-filter: blur(0px);
+        margin-left: auto;
     }
 }

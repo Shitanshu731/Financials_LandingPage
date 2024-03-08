@@ -6,7 +6,7 @@ import Image from "next/image";
 const Navbar: React.FC = () => {
   return (
     <div
-      className={`${styles.navbar} fixed z-[999]  w-full px-20 py-8 flex justify-between max-md:gap-6 items-center md:shadow-lg bg-blend-multiply`}
+      className={`${styles.navbar} fixed max-md:absolute  max-md:-ml-[18%] z-[999]  w-full px-20 py-8  max-md:py-36 flex justify-between max-md:gap-6 items-center md:shadow-lg bg-blend-multiply `}
     >
       <div className="logo max-md:hidden">
         <Image src={"/pss_logo.png"} alt="PSS_Logo" width={200} height={200} />
@@ -24,7 +24,7 @@ const Navbar: React.FC = () => {
                 "max-md:hidden"  :""  
             } ${
               index === 2
-                ? "ml-28 bg-[#FFBE55] rounded-full p-2 flex items-center gap-3 max-md:p-4 max-md:max-h-10 max-md:text-[10px] max-md:w-52 max-md:mx-auto justify-between"
+                ? "ml-28 bg-[#FFBE55] rounded-full p-2 flex items-center gap-3 max-md:p-4 max-md:max-h-6 max-md:text-[12px] max-md:top-7 max-md:absolute max-md:w-48 max-md:mx-auto justify-between"
                 : ""
             } text-xl font-semibold cursor-pointer`}
           >
@@ -35,7 +35,7 @@ const Navbar: React.FC = () => {
                 alt="downarrow"
                 width={33}
                 height={33}
-                className={`${styles.downArrow} text-3xl`}
+                className={`${styles.downArrow} text-xl max-md:w-6`}
               />
             )}
           </a>
