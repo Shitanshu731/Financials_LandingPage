@@ -22,37 +22,37 @@ const MobileBar:React.FC = () => {
         };
     }, [listRef]);
   return (
-    <div className='fixed top-[42rem] w-full' >
+    <div className='fixed top-[42rem] w-full md:hidden' >
        <div className={`${styles.navigation} mx-auto px-3`}>
           <ul ref={listRef}>
             <li className={`${styles.list} ${styles.active}`}>
                 <a href= "#">
-                  <span className={`${styles.icon}`} ><Image  src ={"/home.jpg"} alt="Home" width={20} height={20} /></span>
+                  <span className={`${styles.icon} p-4`} ><Image  src ={"/home.jpg"} alt="Home" width={20} height={20} /></span>
                   <span className={`${styles.text}`}>Home</span>
                 </a>
             </li>
             <li className={`${styles.list}`}>
                 <a href= "#users">
-                  <span className={`${styles.icon}`}><Image src ={"/people.png"} alt="Reviews" width={20} height={20} /></span>
+                  <span className={`${styles.icon} p-4`}><Image src ={"/people.png"} alt="Reviews" width={20} height={20} /></span>
                   <span className={`${styles.text}`}>Users</span>
                 </a>
             </li>
             <li className={`${styles.list}`}>
                 <a href= "#advice">
-                  <span className={`${styles.icon}`}><Image src ={"/lock.png"} alt="Ensure your Plan" width={20} height={20} /></span>
+                  <span className={`${styles.icon} p-4`}><Image src ={"/lock.png"} alt="Ensure your Plan" width={20} height={20} /></span>
                   <span className={`${styles.text}`}>Advice</span>
                 </a>
             </li>
             <li className={`${styles.list}`}>
                 <a href= "#">
-                  <span className={`${styles.icon} hidden`}><Image src ={"/sip.png"} alt="Talk to expert" width={20} height={20} /></span>
+                  <span className={`${styles.icon} p-4`}><Image src ={"/sip.png"} alt="Talk to expert" width={20} height={20} /></span>
                   <span className={`${styles.text}`}>SIP</span>
                 </a>
             </li>
             <li className={`${styles.list}`}>
                 <a href= "#">
-                  <span className={`${styles.icon}`}><Image src ={"/call.png"} alt="PSS_Logo" width={20} height={20} /></span>
-                  <span className={`${styles.text}`}>Book a Call</span>
+                  <span className={`${styles.icon} p-4`}><Image className='-rotate-45' src ={"/rightarrow.png"} alt="rightarrow" width={20} height={20} /></span>
+                  <span className={`${styles.text}`}>Call</span>
                 </a>
             </li>
             <div className={`${styles.indicator}`}></div>
