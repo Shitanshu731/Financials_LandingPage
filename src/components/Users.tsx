@@ -38,19 +38,19 @@ const Users = () => {
             </MotionDiv>
       </div>
       <div className={`${styles.rightContainer}  justify-center`}>
-           <h2 className='text-[40px] font-bold'>Wondering how a Financial Expert can help you?</h2>
-           <div className='flex  gap-12 max-w-[100%] '>
+           <h2 className='text-[40px] font-bold max-sm:text-[20px]'>Wondering how a Financial Expert can help you?</h2>
+           <div className='flex  gap-12 max-w-[100%] max-sm:flex-col '>
             <div>
               {User.leftTag.map((i) => (
                 <div key={i} className='flex items-center gap-4 font-semibold mt-7'>
-                  <Image src={"/tick.png"} alt="tick" height={23} width={23} />
+                  <Image src={"/tick.png"} alt="tick" height={15} width={15} />
                 <p >{i.toLowerCase()}</p></div>
               ))}
             </div>
             <div>
               {User.rightTag.map((i) => (
                 <div key={i} className='flex items-center gap-4 font-semibold mt-7'>
-                <Image src={"/tick.png"} alt="tick" height={23} width={23} />
+                <Image src={"/tick.png"} alt="tick" height={15} width={15} />
               <p >{i.toLowerCase()}</p></div>
               ))}
             </div>

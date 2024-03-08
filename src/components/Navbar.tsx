@@ -5,9 +5,9 @@ import Image from 'next/image'
 
 const Navbar = () => {
   return (
-    <div className = {`${styles.navbar} fixed z-[999]  w-full px-20 py-8 flex justify-between items-center shadow-lg bg-blend-multiply` }>
+    <div className = {`${styles.navbar} fixed z-[999]  w-full px-20 py-8 flex justify-between items-center shadow-lg bg-blend-multiply max-sm:px-5` }>
         <div className='logo'>
-            <Image src ={"/pss_logo.png"} alt="PSS_Logo" width={350} height={300}/>
+            <Image src ={"/pss_logo.png"} alt="PSS_Logo" width={200} height={200} />
         </div>
         <div className={`${styles.links} flex gap-10`}>
         {Link.map((i, index) => (

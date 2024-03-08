@@ -6,8 +6,8 @@ import Image from 'next/image'
 const Advice = () => {
   return (
     <div className={`${styles.adviceMain} w-full py-20`}>
-        <h2 className='text-center font-bold text-3xl'>Overwhelmed with Finance Lingos?</h2>
-        <p className='text-center text-xl mx-auto w-[40rem] mt-6'>Our Financial Experts can cut through the noise and give you a simple, actionable plan to achieve your Financial Goals.</p>
+        <h2 className='text-center font-bold text-3xl max-sm:text-xl'>Overwhelmed with Finance Lingos?</h2>
+        <p className='text-center text-xl mx-auto w-[50%] mt-6'>Our Financial Experts can cut through the noise and give you a simple, actionable plan to achieve your Financial Goals.</p>
         <div className='boxContainer mt-10 flex gap-8 flex-wrap mx-auto px-28 '>
             <MotionDiv initial={{x:"-100%",opacity:0}} animate={{x:0,opacity:1}}  className={`${styles.eachBox} w-[25rem] rounded-lg h-[20rem] items-center justify-center relative`}>
                 <Image src={"/arrowup.png"} alt="arrowup" height={23} width={23} className='mt-10 text-3xl text-center items-center mx-auto mb-5'/>
