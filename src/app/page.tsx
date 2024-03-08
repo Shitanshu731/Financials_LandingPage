@@ -4,6 +4,7 @@ import Users from "@/components/Users";
 import styles from "../styles/LandingPage.module.css"
 import Advice from "@/components/Advice";
 import MobileBar from "@/components/MobileBar";
+import Sip from "@/components/Sip";
 
 const Home: React.FC = () =>{
   return (
@@ -12,6 +13,7 @@ const Home: React.FC = () =>{
     <TitlePage />
     <Advice />
     <Users />
+    <Sip />
     <MobileBar />
     </div>
   );

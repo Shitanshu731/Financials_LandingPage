@@ -39,7 +39,7 @@ const Users = () => {
       </div>
       <div className={`${styles.rightContainer}  justify-center`}>
            <h2 className='text-[40px] font-bold max-sm:text-[20px]'>Wondering how a Financial Expert can help you?</h2>
-           <div className='flex  gap-12 max-w-[100%] max-sm:flex-col '>
+           <div className='flex gap-12 max-w-[100%] max-sm:flex-col '>
             <div>
               {User.leftTag.map((i) => (
                 <div key={i} className='flex items-center gap-4 font-semibold mt-7'>

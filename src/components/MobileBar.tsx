@@ -44,7 +44,7 @@ const MobileBar:React.FC = () => {
                 </a>
             </li>
             <li className={`${styles.list}`}>
-                <a href= "#">
+                <a href= "#sip">
                   <span className={`${styles.icon} p-4`}><Image src ={"/sip.png"} alt="Talk to expert" width={20} height={20} /></span>
                   <span className={`${styles.text}`}>SIP</span>
                 </a>
