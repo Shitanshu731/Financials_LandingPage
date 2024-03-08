@@ -6,7 +6,7 @@ import Image from "next/image";
 const Navbar: React.FC = () => {
   return (
     <div
-      className={`${styles.navbar} fixed max-md:absolute  max-md:-ml-[18%] z-[999]  w-full px-20 py-8  max-md:py-36 flex justify-between max-md:gap-6 items-center md:shadow-lg bg-blend-multiply `}
+      className={`${styles.navbar} fixed max-md:absolute  max-md:mx-auto z-[999]  w-full px-20 py-8  max-md:py-32 flex justify-between max-md:gap-6 items-center md:shadow-lg bg-blend-multiply `}
     >
       <div className="logo max-md:hidden">
         <Image src={"/pss_logo.png"} alt="PSS_Logo" width={200} height={200} />
@@ -44,5 +44,4 @@ const Navbar: React.FC = () => {
     </div>
   );
 };
-<script></script>;
 export default Navbar;
