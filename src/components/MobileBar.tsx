@@ -22,8 +22,8 @@ const MobileBar:React.FC = () => {
         };
     }, [listRef]);
   return (
-    <div className='fixed top-[40rem] w-full' >
-       <div className={`${styles.navigation} mx-auto`}>
+    <div className='fixed top-[42rem] w-full' >
+       <div className={`${styles.navigation} mx-auto px-3`}>
           <ul ref={listRef}>
             <li className={`${styles.list} ${styles.active}`}>
                 <a href= "#">
