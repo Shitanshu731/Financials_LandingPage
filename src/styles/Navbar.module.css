@@ -45,3 +45,21 @@
     background-color: aliceblue;
     border-radius: 50%;
 }
+@media screen and (min-width: 942px) and (max-width: 1102px)  {
+    .links{
+        gap : 7px;
+    }
+    .links a:nth-child(3){
+        margin-left: 1rem;
+    }
+}
+@media screen and (min-width: 760px) and (max-width: 942px)  {
+    .links a:nth-child(1),.links a:nth-child(2){
+        display : none;
+    }
+}
+@media screen and (max-width: 767px){
+    .navbar{
+        background : transparent;
+    }
+}
