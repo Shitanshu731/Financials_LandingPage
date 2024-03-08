@@ -19,7 +19,7 @@ const LandingPage = () => {
           </div>
         ))}
       </div>
-      <div className="border-t-2   border-[#FFBB4D] mt-32 flex max-md:flex-col max-md:gap-5 max-md:mt-28 justify-between items-center py-5 px-20">
+      <div className="border-t-2   border-[#FFBB4D] mt-32 flex max-md:flex-col max-md:gap-5 max-md:mt-[11.6rem] justify-between items-center py-5 px-20">
         {details.map((i, index) => (
           <p
             key={index}
