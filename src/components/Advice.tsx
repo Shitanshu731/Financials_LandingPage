@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const Advice = () => {
   return (
-    <div className={`${styles.adviceMain} w-full py-20`}>
+    <div id="advice" className={`${styles.adviceMain} w-full py-20`}>
         <h2 className='text-center font-bold text-3xl max-sm:text-xl'>Overwhelmed with Finance Lingos?</h2>
         <p className='text-center text-xl mx-auto w-[50%] mt-6'>Our Financial Experts can cut through the noise and give you a simple, actionable plan to achieve your Financial Goals.</p>
         <div className='boxContainer mt-10 flex gap-8 flex-wrap mx-auto px-28 '>
