@@ -1,3 +1,10 @@
+.userMain{
+    background-color: rgba(255, 255, 255, 0.546);
+    backdrop-filter: blur(10px);
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
 .leftContainer{
     flex-basis: 50%;
 }
@@ -26,10 +33,9 @@
         margin-top : 2rem;
     }
 }
-.userMain{
-    background-color: rgba(255, 255, 255, 0.546);
-    backdrop-filter: blur(10px);
-    font-family: "Kanit", sans-serif;
-    font-weight: 300;
-    font-style: normal;
+@media screen and (max-width: 767px){
+    .userMain{
+        background-color: rgba(255, 255, 255, 0.259);
+        backdrop-filter: blur(10px);
+    }
 }
