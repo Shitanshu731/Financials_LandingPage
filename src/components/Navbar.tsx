@@ -11,11 +11,11 @@ const Navbar = () => {
         </div>
         <div className={`${styles.links} flex gap-10`}>
         {Link.map((i, index) => (
-    <a key={index} className={`${index === 2 ? 'ml-28 bg-[#FFBE55] rounded-full p-2 flex items-center gap-3' : ''} text-xl font-semibold cursor-pointer`}>
+    <a key={index} className={`${index === 2 ? 'ml-28 bg-[#FFBE55] rounded-full p-2 flex items-center gap-3' : ''} text-xl font-semibold cursor-pointer max-md:hidden`}>
         {i} {index === 2 && <Image src= {"/downarrow.png"} alt="downarrow" width={33} height={33} className={`${styles.downArrow} text-3xl`} />}
     </a>
 ))}
-
+        <Image src={"/menu.png"} alt='Menu' width={34} height={34} className="md:hidden" />
         </div>
       
     </div>
