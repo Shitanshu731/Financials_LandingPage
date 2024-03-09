@@ -5,3 +5,11 @@
     font-weight: 300;
     font-style: normal;
 }
+@media screen and (max-height: 740px) {
+    .callButton{
+        margin-top : 1rem;
+    }
+    /* .lastSection{
+        margin-top: -0.2rem;
+    } */
+}
