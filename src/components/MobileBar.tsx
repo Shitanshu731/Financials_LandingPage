@@ -50,7 +50,7 @@ const MobileBar:React.FC = () => {
                 </a>
             </li>
             <li className={`${styles.list}`}>
-                <a href= "#">
+                <a href= "#call">
                   <span className={`${styles.icon} p-4`}><Image className='-rotate-45' src ={"/rightarrow.png"} alt="rightarrow" width={20} height={20} /></span>
                   <span className={`${styles.text}`}>Call</span>
                 </a>
