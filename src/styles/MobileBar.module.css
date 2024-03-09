@@ -67,3 +67,8 @@
     opacity : 1;
     transform: translatey(1px);
 }
+@media screen and (max-height: 740px) {
+    .mobileBarMain{
+        top : 40rem;
+    }
+}

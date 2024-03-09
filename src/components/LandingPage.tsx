@@ -26,9 +26,9 @@ const LandingPage = () => {
         {details.map((i, index) => (
           <div
             key={index}
-            className="text-md text-[#25291C] font-semibold tracking-tight leading-none cursor-pointer flex gap-2"
+            className={` text-md text-[#25291C] font-semibold tracking-tight leading-none cursor-pointer flex gap-2 items-center`}
           >
-            <Image src={"/tick.png"} alt="tick" height={15} width={15} /><p>{i}</p>
+            <Image src={"/tick.png"} className={`${styles.tick} `} alt="tick" height={15} width={15} /><p>{i}</p>
           </div>
         ))}
         <div className="start flex items-center gap-5">

@@ -8,3 +8,9 @@
 .main{
     background-image: url("../../public/pssBackground.jpg");
 }
+/* @media screen and (max-width: 394px) {
+        .tick{
+            width: 0.2rem;
+            height : 0.5rem;
+        }
+} */
