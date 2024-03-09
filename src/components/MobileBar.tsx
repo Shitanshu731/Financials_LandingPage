@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import React, { useEffect, useRef,MouseEvent } from 'react'
 import styles from "../styles/MobileBar.module.css"
+import { MotionDiv } from './MotionDiv'
 
 const MobileBar:React.FC = () => {
     const listRef = useRef<HTMLUListElement>(null);
@@ -22,7 +23,9 @@ const MobileBar:React.FC = () => {
         };
     }, [listRef]);
   return (
-    <div className={`fixed top-[42rem] w-full md:hidden ${styles.mobileBarMain}`} >
+    <MotionDiv initial={{ opacity: 0, y: 100 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.5 }} className={`fixed top-[42rem] w-full md:hidden ${styles.mobileBarMain}`} >
        <div className={`${styles.navigation} mx-auto px-3`}>
           <ul ref={listRef}>
             <li className={`${styles.list} ${styles.active}`}>
@@ -58,7 +61,7 @@ const MobileBar:React.FC = () => {
             <div className={`${styles.indicator}`}></div>
           </ul>
         </div>
-    </div>
+    </MotionDiv>
   )
 }
 

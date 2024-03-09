@@ -2,15 +2,18 @@ import React from "react";
 import { Link } from "../../constants/utils";
 import styles from "../styles/Navbar.module.css";
 import Image from "next/image";
+import { MotionDiv } from "./MotionDiv";
 
 const Navbar: React.FC = () => {
   return (
     <div
       className={`${styles.navbar} fixed max-md:absolute  max-md:mx-auto z-[999]  w-full px-20 py-8  max-md:py-32 flex justify-between max-md:gap-6 items-center md:shadow-lg bg-blend-multiply `}
     >
-      <div className="logo max-md:hidden">
+      <MotionDiv initial={{ opacity: 0, y: -100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }} className="logo max-md:hidden">
         <Image src={"/pss_logo.png"} alt="PSS_Logo" width={200} height={200} />
-      </div>
+      </MotionDiv>
       <div className={`${styles.links} flex gap-10 max-md:gap-0 max-md:w-full`}>
         {Link.map((i, index) => (
           <a

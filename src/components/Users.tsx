@@ -38,7 +38,7 @@ const Users = () => {
             </MotionDiv>
       </div>
       <div className={`${styles.rightContainer}  justify-center`}>
-           <h2 className='text-[40px] font-bold max-sm:text-[20px]'>Wondering how a Financial Expert can help you?</h2>
+           <h2 className='text-[40px] font-bold max-sm:text-[29px]'>Wondering how a Financial Expert can help you?</h2>
            <div className='flex gap-12 max-w-[100%] max-sm:flex-col '>
             <div>
               {User.leftTag.map((i) => (
