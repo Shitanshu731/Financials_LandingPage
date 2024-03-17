@@ -22,7 +22,7 @@ const LandingPage = () => {
       <div className="md:hidden z-50  absolute  text-sm w-full"><h1 className="text-center mx-auto w-[60%] mt-[11.7rem] font-semibold">Grow Your Wealth with Expert Guidance</h1></div>
       <Image className="md:hidden mx-auto h-52 mt-60 rounded-lg shadow-lg sm:w-[30rem]" src ={"/gif.gif"} alt="Investement_Logo"  width={360} height={50} />
       <p  className="text-center mx-auto w-[70%] mt-[1rem] font-semibold text-[13px] md:font-bold  ">Connect with Financial Experts whom you can trust and get the best guidance on creating, protecting and managing your Wealth.</p>
-      <div className={`${styles.lastSection} md:border-t-2 border-[#FFBB4D] mt-32 flex max-md:flex-col max-md:gap-5 max-md:mt-[1rem] justify-between items-center py-5 px-16`}>
+      <div className={`${styles.lastSection} md:border-t-2 border-[#FFBB4D] mt-32 flex max-md:flex-col max-md:gap-5 max-md:mt-[1rem] justify-between items-center py-5 px-16 `}>
         {details.map((i, index) => (
           <div
             key={index}
