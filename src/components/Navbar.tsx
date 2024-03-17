@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
       <MotionDiv initial={{ opacity: 0, y: -100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }} className="logo max-md:hidden">
-        <Image src={"/pss_logo.png"} alt="PSS_Logo" width={200} height={200} />
+        <Image src={"/companyLogo.png"} alt="PSS_Logo" width={100} height={50} />
       </MotionDiv>
       <div className={`${styles.links} flex gap-10 max-md:gap-0 max-md:w-full`}>
         {Link.map((i, index) => (
